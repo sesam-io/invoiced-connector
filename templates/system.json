@@ -1,0 +1,16 @@
+{
+  "_id": "{{@ system @}}",
+  "authentication": "basic",
+  "operations": {
+    "customers-list": {
+      "id_expression": "{{ id }}",
+      "method": "GET",
+      "url": "customers"
+    }
+  },
+  "password": "",
+  "type": "system:rest",
+  "url_pattern": "https://api.sandbox.invoiced.com/%s",
+  "username": "$SECRET(api_key)",
+  "verify_ssl": true
+}
